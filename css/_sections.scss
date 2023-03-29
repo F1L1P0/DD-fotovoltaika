@@ -1,0 +1,16 @@
+$navbarHeight: 80px;
+
+.section-navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: $navbarHeight;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px -1px 33px rgb(0, 0, 0);
+}
+
+.section-hero {
+  background-color: grey;
+  height: calc(100svh - $navbarHeight);
+  padding: 10rem 0;
+}
