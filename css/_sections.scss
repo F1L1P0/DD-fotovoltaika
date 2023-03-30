@@ -11,6 +11,15 @@ $navbarHeight: 80px;
 
 .section-hero {
   background-color: grey;
+  height: calc(100vh - $navbarHeight); //backup value if svh is not supported
   height: calc(100svh - $navbarHeight);
   padding: 10rem 0;
+}
+
+.section-about {
+  margin: 8rem 0;
+}
+
+.section-services {
+  margin: 8rem 0;
 }
