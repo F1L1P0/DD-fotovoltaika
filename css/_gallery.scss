@@ -10,17 +10,18 @@ label {
 .gallery {
   @include cc();
   width: 100%;
+  max-width: 100%;
   height: 800px;
 
   & [class*="item"] {
-    width: 34%;
-    height: 34%;
+    width: 33.33%;
+    height: 33.33%;
     background: url() center center / cover no-repeat;
     transition: all 0.3s ease-in-out;
     z-index: 0;
     &:hover {
-      border: 1px solid white;
-      z-index: 1;
+      cursor: pointer;
+      z-index: 2; //prevents image crossing when showing img
     }
     &:nth-of-type(1) {
       top: 0;
@@ -28,23 +29,23 @@ label {
     }
     &:nth-of-type(2) {
       top: 0;
-      left: 34%;
+      left: 33.33%;
     }
     &:nth-of-type(3) {
       top: 0;
-      left: 66%;
+      left: 66.66%;
     }
     &:nth-of-type(4) {
-      top: 34%;
+      top: 33.33%;
       left: 0;
     }
     &:nth-of-type(5) {
-      top: 34%;
-      left: 34%;
+      top: 33.33%;
+      left: 33.33%;
     }
     &:nth-of-type(6) {
-      top: 34%;
-      left: 66%;
+      top: 33.33%;
+      left: 66.66%;
     }
   }
 

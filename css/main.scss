@@ -7,3 +7,7 @@
 @forward "./sections";
 @forward "./hero";
 @forward "./gallery";
+
+body {
+  overflow-x: hidden;
+}
