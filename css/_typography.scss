@@ -1,1 +1,21 @@
 @use "./variables" as *;
+
+.header-decoration {
+  position: relative;
+  margin-bottom: 30px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: $secondaryColor;
+  }
+}
+.header-decoration--center {
+  &::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

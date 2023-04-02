@@ -1,3 +1,4 @@
+@use "./mixins" as *;
 $navbarHeight: 80px;
 
 .section-navbar {
@@ -14,7 +15,7 @@ $navbarHeight: 80px;
   background-color: grey;
   height: calc(100vh - $navbarHeight); //backup value if svh is not supported
   height: calc(100svh - $navbarHeight);
-  padding: 10rem 0;
+  padding: 4rem 0;
 }
 
 .section-about {
@@ -23,4 +24,10 @@ $navbarHeight: 80px;
 
 .section-services {
   margin: 8rem 0;
+}
+
+@include bigger-than(md) {
+  .section-hero {
+    padding: 10rem 0;
+  }
 }

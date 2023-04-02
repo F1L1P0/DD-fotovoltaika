@@ -1,8 +1,16 @@
-.hero__desc p {
-  max-width: 30ch;
+@use "./mixins" as *;
+
+.hero__img {
+  margin-top: 2.5rem;
+  max-width: 200px;
+  height: auto;
+  img {
+    width: 100%;
+  }
 }
 
 .mouse {
+  display: none;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -37,5 +45,11 @@
   to {
     transform: translate(-50%, 0);
     opacity: 0;
+  }
+}
+
+@include bigger-than(md) {
+  .mouse {
+    display: flex;
   }
 }

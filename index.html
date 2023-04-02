@@ -17,7 +17,7 @@
     <title>DD - Fotovoltaika</title>
   </head>
   <body>
-    <section class="section-navbar position-sticky">
+    <section class="section-navbar position-sticky z-2">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
@@ -46,14 +46,14 @@
         </div>
       </div>
     </section>
-    <section class="section-hero">
+    <section id="hero" class="section-hero">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
+        <div class="row justify-content-center justify-content-md-between px-3">
+          <div class="col-12 col-md-6">
             <div class="hero d-flex justify-content-around">
               <div class="hero__desc">
                 <p>Jsme tu pro vás</p>
-                <h1>Nějaký text o nás</h1>
+                <h1 class="header-decoration">Nějaký text o nás</h1>
                 <p>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Quibusdam, accusantium. Lorem ipsum dolor sit amet consectetur
@@ -66,9 +66,14 @@
                   <a class="btn" href="#">Naše portfolio</a>
                 </div>
               </div>
-              <div class="hero__img">
-                <img src="" alt="Obrázek" />
-              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 p-3 d-flex justify-content-center">
+            <div class="hero__img">
+              <img
+                src="http://via.placeholder.com/340x250
+              "
+                alt="Obrázek" />
             </div>
           </div>
         </div>
@@ -78,12 +83,12 @@
         <div class="mouse-circle"></div>
       </div>
     </section>
-    <section class="section-about">
+    <section id="about" class="section-about">
       <div class="container">
-        <div class="row">
+        <div class="row px-3">
           <div class="col-md-6">
             <h3>Welcome to</h3>
-            <h2>DD pulse group</h2>
+            <h2 class="header-decoration">DD pulse group</h2>
             <p>Jsme nově působící firma v oblasti fotovoltaiky</p>
           </div>
           <div class="col-md-6">
@@ -108,34 +113,30 @@
         </div>
       </div>
     </section>
-    <section class="section-services">
+    <section id="services" class="section-services">
       <div class="container-fluid">
-        <div class="row p-2">
-          <div class="col-4">
+        <div class="row p-2 bg-dark-subtle py-4 text-center">
+          <div class="col-12 col-md-4 mt-3">
             <div class="services__wrapper">
-              <h2 class="text-center"><i class="fa-solid fa-pen"></i> Návrh</h2>
+              <h2><i class="fa-solid fa-pen"></i> Návrh</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
                 soluta et placeat quis, id sed.
               </p>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-md-4 mt-3">
             <div class="services__wrapper">
-              <h2 class="text-center">
-                <i class="fa-solid fa-hammer"></i> Zprovoznění
-              </h2>
+              <h2><i class="fa-solid fa-hammer"></i> Zprovoznění</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
                 soluta et placeat quis, id sed.
               </p>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-md-4 mt-3">
             <div class="services__wrapper">
-              <h2 class="text-center">
-                <i class="fa-solid fa-wrench"></i> Údržba
-              </h2>
+              <h2><i class="fa-solid fa-wrench"></i> Údržba</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
                 soluta et placeat quis, id sed.
@@ -144,11 +145,14 @@
           </div>
         </div>
         <div class="container">
-          <div class="row d-flex justify-content-center">
+          <div class="row d-flex justify-content-center py-3">
             <div class="col-12">
-              <h2 class="text-center my-5">Naše služby</h2>
+              <h2
+                class="text-center my-5 header-decoration header-decoration--center">
+                Naše služby
+              </h2>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-xl-4">
               <i></i>
               <div class="services__text">
                 <h3>DESIGN & PLANNING</h3>
@@ -158,7 +162,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-xl-4">
               <i></i>
               <div class="services__text">
                 <h3>BUILDING RENOVATION</h3>
@@ -168,7 +172,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-xl-4">
               <i></i>
               <div class="services__text">
                 <h3>INTERIOR DESIGN</h3>
@@ -178,7 +182,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-xl-4">
               <i></i>
               <div class="services__text">
                 <h3>CONSTRUCTION SERVICES</h3>
@@ -188,7 +192,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-xl-4">
               <i></i>
               <div class="services__text">
                 <h3>DOCUMENTATION</h3>
@@ -198,7 +202,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-xl-4">
               <i></i>
               <div class="services__text">
                 <h3>PROFESSIONAL SUPPORT</h3>
@@ -212,11 +216,13 @@
         </div>
       </div>
     </section>
-    <section class="section-gallery">
+    <section id="gallery" class="section-gallery">
       <div class="container-fluid m-0 g-0">
         <div class="row m-0 g-0">
           <div class="col-12">
-            <h3 class="text-center">Galerie našich projektů</h3>
+            <h3 class="text-center header-decoration header-decoration--center">
+              Galerie našich projektů
+            </h3>
           </div>
           <div class="col-12">
             <div class="gallery position-relative">
@@ -267,15 +273,70 @@
         </div>
       </div>
     </section>
-    <section>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <footer></footer>
+    <section class="section-footer bg-dark-subtle">
+      <div class="footer">
+        <div class="container">
+          <div class="row py-3 d-flex text-center">
+            <div class="col-md-4 col-xs-12">
+              <div class="first">
+                <h4>Můj nadpis</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+              <div class="second">
+                <h4>Navigace</h4>
+                <ul>
+                  <li><a href="#hero">Na začátek</a></li>
+                  <li><a href="#about">O nás</a></li>
+                  <li><a href="#services">Služby</a></li>
+                  <li><a href="#contact">Kontakt</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-xs-12">
+              <div class="third">
+                <h4>Contact</h4>
+                <ul>
+                  <li>Andreea Mihaela Bunget</li>
+                  <li></li>
+
+                  <li>
+                    <i class="far fa-envelope"></i> andreea@andreeabunget.co.uk
+                  </li>
+                  <li><i class="far fa-envelope"></i> email@yahoo.com</li>
+
+                  <li><i class="fas fa-map-marker-alt"></i> London, UK</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="line"></div>
+              <div>
+                <a href="" target="_blank">
+                  <i class="fab fa-facebook fa-2x margin"></i
+                ></a>
+                <a href="" target="_blank">
+                  <i class="fab fa-instagram fa-2x margin"></i
+                ></a>
+                <a href="" target="_blank"
+                  ><i class="fab fa-youtube fa-2x margin"></i
+                ></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
     <script
       defer
       src="https://kit.fontawesome.com/3ec2e00c0e.js"

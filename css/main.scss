@@ -1,13 +1,18 @@
 @forward "./reset";
 @forward "./mixins";
 @forward "./typography";
-@forward "./variables";
+@use "./variables" as *;
 @forward "./navbar";
 @forward "./btn";
 @forward "./sections";
 @forward "./hero";
 @forward "./gallery";
+@forward "./services";
 
 body {
   overflow-x: hidden;
+}
+::selection {
+  background: $secondaryColor;
+  color: #000;
 }

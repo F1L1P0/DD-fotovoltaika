@@ -111,6 +111,25 @@ html {
   scroll-behavior: smooth;
 }
 
+.header-decoration {
+  position: relative;
+  margin-bottom: 30px;
+}
+.header-decoration::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background-color: #f4cb08;
+}
+
+.header-decoration--center::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .btn {
   border-radius: 1rem !important;
   color: rgb(255, 255, 255) !important;
@@ -148,7 +167,7 @@ html {
   background-color: grey;
   height: calc(100vh - 80px);
   height: calc(100svh - 80px);
-  padding: 10rem 0;
+  padding: 4rem 0;
 }
 
 .section-about {
@@ -159,11 +178,22 @@ html {
   margin: 8rem 0;
 }
 
-.hero__desc p {
-  max-width: 30ch;
+@media (min-width: 768px) {
+  .section-hero {
+    padding: 10rem 0;
+  }
+}
+.hero__img {
+  margin-top: 2.5rem;
+  max-width: 200px;
+  height: auto;
+}
+.hero__img img {
+  width: 100%;
 }
 
 .mouse {
+  display: none;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -202,6 +232,11 @@ html {
     opacity: 0;
   }
 }
+@media (min-width: 768px) {
+  .mouse {
+    display: flex;
+  }
+}
 label {
   position: absolute;
   margin: 0;
@@ -227,6 +262,7 @@ label {
 .gallery [class*=item]:hover {
   cursor: pointer;
   z-index: 2;
+  border: 1px solid rgba(255, 255, 255, 0.7);
 }
 .gallery [class*=item]:nth-of-type(1) {
   top: 0;
@@ -265,4 +301,14 @@ label {
 
 body {
   overflow-x: hidden;
+}
+
+::-moz-selection {
+  background: #f4cb08;
+  color: #000;
+}
+
+::selection {
+  background: #f4cb08;
+  color: #000;
 }/*# sourceMappingURL=main.css.map */
