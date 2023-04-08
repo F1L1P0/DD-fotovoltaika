@@ -130,6 +130,40 @@ html {
   transform: translateX(-50%);
 }
 
+html[data-theme=dark] nav {
+  transition: background-color 0.5s ease-in-out;
+  background-color: rgb(150, 150, 150) !important;
+}
+html[data-theme=dark] a,
+html[data-theme=dark] p,
+html[data-theme=dark] li,
+html[data-theme=dark] h1,
+html[data-theme=dark] h2,
+html[data-theme=dark] h3 {
+  transition: all 0.5s ease-in-out;
+  color: rgb(220, 220, 220);
+}
+html[data-theme=dark] #hero {
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(102, 102, 102);
+}
+html[data-theme=dark] #about {
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(122, 122, 122);
+}
+html[data-theme=dark] #services {
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(122, 122, 122);
+}
+html[data-theme=dark] #gallery {
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(122, 122, 122);
+}
+html[data-theme=dark] #footer {
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(122, 122, 122) !important;
+}
+
 section {
   padding: 4rem 0;
 }

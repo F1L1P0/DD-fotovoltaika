@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 $breakpoints: (
   "sm": 576px,
   "md": 768px,
@@ -21,4 +23,40 @@ $breakpoints: (
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@mixin dark() {
+  nav {
+    transition: background-color 0.5s ease-in-out;
+    background-color: rgb(150, 150, 150) !important;
+  }
+  a,
+  p,
+  li,
+  h1,
+  h2,
+  h3 {
+    transition: all 0.5s ease-in-out;
+    color: rgb(220, 220, 220);
+  }
+  #hero {
+    transition: all 0.5s ease-in-out;
+    background-color: $dark-bg;
+  }
+  #about {
+    transition: all 0.5s ease-in-out;
+    background-color: $dark-bg--lighter;
+  }
+  #services {
+    transition: all 0.5s ease-in-out;
+    background-color: $dark-bg--lighter;
+  }
+  #gallery {
+    transition: all 0.5s ease-in-out;
+    background-color: $dark-bg--lighter;
+  }
+  #footer {
+    transition: all 0.5s ease-in-out;
+    background-color: $dark-bg--lighter !important;
+  }
 }

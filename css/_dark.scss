@@ -1,0 +1,5 @@
+@use "./mixins" as *;
+
+html[data-theme="dark"] {
+  @include dark;
+}

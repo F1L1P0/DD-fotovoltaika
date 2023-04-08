@@ -21,3 +21,11 @@ scrollToTopBtn.addEventListener("click", () => {
     behavior: "smooth",
   })
 })
+// changing data theme
+const toggleSwitch = document.querySelector("#toggle-switch")
+
+toggleSwitch.addEventListener("click", () => {
+  const currentTheme = document.documentElement.getAttribute("data-theme")
+  const nextTheme = currentTheme === "light" ? "dark" : "light"
+  document.documentElement.setAttribute("data-theme", nextTheme)
+})

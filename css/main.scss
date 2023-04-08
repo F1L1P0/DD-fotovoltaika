@@ -1,6 +1,7 @@
 @forward "./reset";
 @forward "./mixins";
 @forward "./typography";
+@forward "./dark";
 @use "./variables" as *;
 @forward "./navbar";
 @forward "./btn";
