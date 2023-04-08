@@ -1,6 +1,10 @@
 @use "./mixins" as *;
 $navbarHeight: 80px;
 
+section {
+  padding: 4rem 0;
+}
+
 .section-navbar {
   display: flex;
   align-items: center;
@@ -12,18 +16,24 @@ $navbarHeight: 80px;
 }
 
 .section-hero {
-  background-color: grey;
+  background-color: rgb(175, 175, 175);
   height: calc(100vh - $navbarHeight); //backup value if svh is not supported
   height: calc(100svh - $navbarHeight);
-  padding: 4rem 0;
 }
 
 .section-about {
-  margin: 8rem 0;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 1rem;
 }
 
 .section-services {
-  margin: 8rem 0;
+}
+
+.section-gallery {
+  background-color: #7d7d7d;
+}
+
+.section-footer {
 }
 
 @include bigger-than(md) {

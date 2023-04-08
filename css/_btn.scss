@@ -1,24 +1,24 @@
 @use "./variables" as *;
 
-.btn {
-  border-radius: 1rem !important;
-  color: rgb(255, 255, 255) !important;
-  transition: all 0.3s ease-in-out;
-  font-weight: 600 !important;
-  border: 1px solid white !important;
-  &:hover {
-    color: $primaryColor !important;
-    background-color: rgb(255, 255, 255) !important;
-  }
-  &:focus-within {
-    outline: 2px solid rgb(69, 69, 255) !important;
-  }
-}
+// .button {
+//   border-radius: 1rem;
+//   color: rgb(0, 0, 0);
+//   transition: all 0.3s ease-in-out;
+//   font-weight: 600;
+//   border: 1px solid white;
+//   &:hover {
+//     color: $primaryColor;
+//     background-color: rgb(255, 255, 255);
+//   }
+//   &:focus-within {
+//     outline: 2px solid rgb(69, 69, 255);
+//   }
+// }
 
-.btn--primary {
-  background-color: $secondaryColor !important;
-  border: none !important;
-  &:hover {
-    background-color: darken($color: $secondaryColor, $amount: 8) !important;
-  }
-}
+// .button--primary {
+//   background-color: $secondaryColor;
+//   border: none;
+//   &:hover {
+//     background-color: darken($color: $secondaryColor, $amount: 8);
+//   }
+// }

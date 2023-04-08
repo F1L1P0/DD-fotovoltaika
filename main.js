@@ -11,3 +11,13 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos
 }
+// scroll to the top
+const scrollToTopBtn = document.getElementById("scrollToTop")
+
+scrollToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  })
+})

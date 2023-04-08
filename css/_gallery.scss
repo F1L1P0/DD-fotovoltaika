@@ -48,6 +48,18 @@ label {
       top: 33.33%;
       left: 66.66%;
     }
+    &:nth-of-type(7) {
+      top: 66.33%;
+      left: 0%;
+    }
+    &:nth-of-type(8) {
+      top: 66.33%;
+      left: 33.33%;
+    }
+    &:nth-of-type(9) {
+      top: 66.33%;
+      left: 66.66%;
+    }
   }
 
   & input {

@@ -130,27 +130,8 @@ html {
   transform: translateX(-50%);
 }
 
-.btn {
-  border-radius: 1rem !important;
-  color: rgb(255, 255, 255) !important;
-  transition: all 0.3s ease-in-out;
-  font-weight: 600 !important;
-  border: 1px solid white !important;
-}
-.btn:hover {
-  color: #1c1c1c !important;
-  background-color: rgb(255, 255, 255) !important;
-}
-.btn:focus-within {
-  outline: 2px solid rgb(69, 69, 255) !important;
-}
-
-.btn--primary {
-  background-color: #f4cb08 !important;
-  border: none !important;
-}
-.btn--primary:hover {
-  background-color: #ccaa07 !important;
+section {
+  padding: 4rem 0;
 }
 
 .section-navbar {
@@ -164,18 +145,18 @@ html {
 }
 
 .section-hero {
-  background-color: grey;
+  background-color: rgb(175, 175, 175);
   height: calc(100vh - 80px);
   height: calc(100svh - 80px);
-  padding: 4rem 0;
 }
 
 .section-about {
-  margin: 8rem 0;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 1rem;
 }
 
-.section-services {
-  margin: 8rem 0;
+.section-gallery {
+  background-color: #7d7d7d;
 }
 
 @media (min-width: 768px) {
@@ -288,6 +269,18 @@ label {
   top: 33.33%;
   left: 66.66%;
 }
+.gallery [class*=item]:nth-of-type(7) {
+  top: 66.33%;
+  left: 0%;
+}
+.gallery [class*=item]:nth-of-type(8) {
+  top: 66.33%;
+  left: 33.33%;
+}
+.gallery [class*=item]:nth-of-type(9) {
+  top: 66.33%;
+  left: 66.66%;
+}
 .gallery input {
   display: none;
 }
@@ -299,8 +292,11 @@ label {
   z-index: 2;
 }
 
-body {
-  overflow-x: hidden;
+.line {
+  display: inline;
+  padding: 1rem 0;
+  width: 100%;
+  border-top: 1px solid rgb(87, 87, 87);
 }
 
 ::-moz-selection {

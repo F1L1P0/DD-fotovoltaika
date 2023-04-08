@@ -8,10 +8,11 @@
 @forward "./hero";
 @forward "./gallery";
 @forward "./services";
+@forward "./footer";
 
-body {
-  overflow-x: hidden;
-}
+// body {
+//   overflow-x: hidden;
+// }
 ::selection {
   background: $secondaryColor;
   color: #000;
