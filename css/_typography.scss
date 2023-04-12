@@ -1,6 +1,6 @@
 @use "./variables" as *;
 
-.header-decoration {
+.underline-decoration {
   position: relative;
   margin-bottom: 30px;
   &::after {
@@ -9,11 +9,11 @@
     bottom: -15px;
     left: 0;
     width: 60px;
-    height: 2px;
+    height: 3px;
     background-color: $secondaryColor;
   }
 }
-.header-decoration--center {
+.underline-decoration--center {
   &::after {
     left: 50%;
     transform: translateX(-50%);

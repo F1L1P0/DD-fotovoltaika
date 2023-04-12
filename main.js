@@ -13,8 +13,16 @@ window.onscroll = function () {
 }
 // scroll to the top
 const scrollToTopBtn = document.getElementById("scrollToTop")
+const logo = document.getElementById("scrollToTopLogo")
 
 scrollToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  })
+})
+logo.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
     left: 0,

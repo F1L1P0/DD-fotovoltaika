@@ -19,10 +19,10 @@ $breakpoints: (
   }
 }
 
-@mixin cc() {
+@mixin gallery-cc() {
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -47%);
 }
 
 @mixin dark() {
@@ -49,7 +49,7 @@ $breakpoints: (
   }
   #services {
     transition: all 0.5s ease-in-out;
-    background-color: $dark-bg;
+    background-color: $dark-bg--lighter;
   }
   #gallery {
     transition: all 0.5s ease-in-out;
@@ -58,5 +58,8 @@ $breakpoints: (
   #footer {
     transition: all 0.5s ease-in-out;
     background-color: $dark-bg--lighter !important;
+  }
+  .footer__icons > a:hover > i {
+    color: rgb(33, 37, 41);
   }
 }

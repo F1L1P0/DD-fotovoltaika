@@ -4,3 +4,11 @@
   width: 100%;
   border-top: 1px solid rgb(87, 87, 87);
 }
+
+.footer__icons > a > i {
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__icons > a:hover > i {
+  color: darken($color: #1945be, $amount: 0.6);
+}

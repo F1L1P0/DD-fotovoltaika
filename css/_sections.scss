@@ -1,5 +1,5 @@
 @use "./mixins" as *;
-$navbarHeight: 80px;
+@use "./variables" as *;
 
 section {
   padding: 4rem 0;
@@ -23,14 +23,16 @@ section {
 
 .section-about {
   background-color: rgb(255, 255, 255);
-  padding-bottom: 1rem;
+  padding-bottom: 4rem;
 }
 
 .section-services {
+  padding: 0 0 4rem 0;
 }
 
 .section-gallery {
   background-color: #7d7d7d;
+  padding: 4rem 0 0 0;
 }
 
 .section-footer {

@@ -17,35 +17,73 @@
     <title>DD - Fotovoltaika</title>
   </head>
   <body>
-    <nav class="section-navbar position-sticky z-2">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <header
-              class="navbar d-flex justify-content-between align-items-center p-2">
-              <div class="header__logo d-flex gap-2 align-items-center">
-                <div class="header__logo__img">
-                  <img
-                    class="header__logo_text"
-                    src="./images/DD-logo.svg"
-                    alt="Obrázek loga"
-                    height="50" />
-                </div>
-                <h1 class="fs-4">pulsegroup.sro</h1>
-              </div>
-              <div class="dd-header__navigation">
-                <ul class="d-flex gap-2 m-0">
-                  <li><a href="#about">O nás</a></li>
-                  <li><a href="#offer">Nabídka</a></li>
-                  <li><a href="#gallery">Galerie</a></li>
-                  <li><a href="#contact">Kontakt</a></li>
-                  <li id="toggle-switch">change theme</li>
-                </ul>
-              </div>
-            </header>
-          </div>
+    <nav class="section-navbar position-sticky z-2 navbar-expand-md">
+      <header class="navbar d-flex justify-content-between w-100 px-5">
+        <div class="header__logo d-flex gap-2 align-items-center">
+          <a
+            href="#"
+            id="scrollToTopLogo"
+            class="fs-4 navbar-brand"
+            aria-hidden="true">
+            DD pulsegroup.sro</a
+          >
         </div>
-      </div>
+        <button
+          class="navbar-toggler toggler-example"
+          type="button"
+          data-toggle="collapse"
+          data-target="#hamburgerMenu"
+          aria-controls="hamburgerMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="dark-blue-text"><i class="fas fa-bars fa-1x"></i></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end align-items-center"
+          id="hamburgerMenu">
+          <ul class="navbar-nav mr-auto d-flex align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">O nás</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#offer">Nabídka</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Galerie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontakt</a>
+            </li>
+            <li class="nav-item">
+              <div class="switch_box box_3">
+                <div class="toggle_switch">
+                  <input type="checkbox" class="switch_3" id="toggle-switch" />
+                  <svg
+                    class="checkbox"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style="isolation: isolate"
+                    viewBox="0 0 168 80">
+                    <path
+                      class="outer-ring"
+                      d="M41.534 9h88.932c17.51 0 31.724 13.658 31.724 30.482 0 16.823-14.215 30.48-31.724 30.48H41.534c-17.51 0-31.724-13.657-31.724-30.48C9.81 22.658 24.025 9 41.534 9z"
+                      fill="none"
+                      stroke="#233043"
+                      stroke-width="3"
+                      stroke-linecap="square"
+                      stroke-miterlimit="3" />
+                    <path
+                      class="is_checked"
+                      d="M17 39.482c0-12.694 10.306-23 23-23s23 10.306 23 23-10.306 23-23 23-23-10.306-23-23z" />
+                    <path
+                      class="is_unchecked"
+                      d="M132.77 22.348c7.705 10.695 5.286 25.617-5.417 33.327-2.567 1.85-5.38 3.116-8.288 3.812 7.977 5.03 18.54 5.024 26.668-.83 10.695-7.706 13.122-22.634 5.418-33.33-5.855-8.127-15.88-11.474-25.04-9.23 2.538 1.582 4.806 3.676 6.66 6.25z" />
+                  </svg>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </header>
     </nav>
     <section id="hero" class="section-hero">
       <div class="container">
@@ -54,7 +92,7 @@
             <div class="hero d-flex justify-content-around">
               <div class="hero__desc">
                 <p>Jsme tu pro vás</p>
-                <h1 class="header-decoration">Nějaký text o nás</h1>
+                <h1 class="underline-decoration">Nějaký text o nás</h1>
                 <p>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Quibusdam, accusantium. Lorem ipsum dolor sit amet consectetur
@@ -93,7 +131,7 @@
         <div class="row px-3">
           <div class="col-md-6">
             <h3>Welcome to</h3>
-            <h2 class="header-decoration">DD pulse group</h2>
+            <h2 class="underline-decoration">DD pulse group</h2>
             <p>Jsme nově působící firma v oblasti fotovoltaiky</p>
           </div>
           <div class="col-md-6">
@@ -122,8 +160,8 @@
     </section>
     <section id="services" class="section-services">
       <div class="container-fluid">
-        <div class="row py-4 text-center p-0">
-          <div class="col-12 col-md-4 mt-3 p-0">
+        <div class="row text-center pt-0 text-white">
+          <div class="col-12 col-md-4 p-0">
             <div class="services__wrapper services__solar-img-1">
               <h2><i class="fa-solid fa-pen"></i> Návrh</h2>
               <p>
@@ -132,7 +170,7 @@
               </p>
             </div>
           </div>
-          <div class="col-12 col-md-4 mt-3 p-0">
+          <div class="col-12 col-md-4 p-0">
             <div class="services__wrapper services__solar-img-2">
               <h2><i class="fa-solid fa-hammer"></i> Zprovoznění</h2>
               <p>
@@ -141,7 +179,7 @@
               </p>
             </div>
           </div>
-          <div class="col-12 col-md-4 mt-3 p-0">
+          <div class="col-12 col-md-4 p-0">
             <div class="services__wrapper services__solar-img-3">
               <h2><i class="fa-solid fa-wrench"></i> Údržba</h2>
               <p>
@@ -152,10 +190,10 @@
           </div>
         </div>
         <div class="container">
-          <div class="row d-flex justify-content-center py-3">
-            <div class="col-12">
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 my-3">
               <h2
-                class="text-center my-5 header-decoration header-decoration--center">
+                class="text-center my-5 underline-decoration underline-decoration--center">
                 Naše služby
               </h2>
             </div>
@@ -228,7 +266,7 @@
         <div class="row m-0 g-0">
           <div class="col-12">
             <h3
-              class="text-center header-decoration header-decoration--center mb-5">
+              class="text-center underline-decoration underline-decoration--center mb-5">
               Galerie našich projektů
             </h3>
           </div>
@@ -306,7 +344,7 @@
       <div class="footer">
         <div class="container">
           <div
-            class="row py-3 d-flex justify-content-center align-items-center gy-2">
+            class="row py-5 d-flex justify-content-center align-items-center">
             <div class="col-12 col-sm-6 col-lg-4 text-center">
               <h4 id="contact">Kontakt</h4>
               <ul class="d-flex flex-column gap-3 p-0">
@@ -347,7 +385,7 @@
             <div
               class="col-12 d-flex justify-content-around align-items-center flex-column">
               <div class="line"></div>
-              <div class="d-flex gap-3">
+              <div class="d-flex gap-3 footer__icons">
                 <a href="" target="_blank">
                   <i class="fab fa-facebook fa-2x margin"></i
                 ></a>
@@ -364,12 +402,13 @@
       </div>
     </section>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"></script>
-    <script
       defer
       src="https://kit.fontawesome.com/3ec2e00c0e.js"
+      crossorigin="anonymous"></script>
+    <script
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"></script>
     <script src="/main.js"></script>
   </body>
