@@ -27,7 +27,7 @@ $breakpoints: (
 
 @mixin dark() {
   nav {
-    transition: background-color 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     background-color: rgb(150, 150, 150) !important;
   }
   a,
@@ -49,11 +49,11 @@ $breakpoints: (
   }
   #services {
     transition: all 0.5s ease-in-out;
-    background-color: $dark-bg--lighter;
+    background-color: $dark-bg;
   }
   #gallery {
     transition: all 0.5s ease-in-out;
-    background-color: $dark-bg--lighter;
+    background-color: $dark-bg;
   }
   #footer {
     transition: all 0.5s ease-in-out;

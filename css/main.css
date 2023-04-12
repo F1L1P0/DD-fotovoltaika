@@ -131,7 +131,7 @@ html {
 }
 
 html[data-theme=dark] nav {
-  transition: background-color 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background-color: rgb(150, 150, 150) !important;
 }
 html[data-theme=dark] a,
@@ -153,11 +153,11 @@ html[data-theme=dark] #about {
 }
 html[data-theme=dark] #services {
   transition: all 0.5s ease-in-out;
-  background-color: rgb(122, 122, 122);
+  background-color: rgb(102, 102, 102);
 }
 html[data-theme=dark] #gallery {
   transition: all 0.5s ease-in-out;
-  background-color: rgb(122, 122, 122);
+  background-color: rgb(102, 102, 102);
 }
 html[data-theme=dark] #footer {
   transition: all 0.5s ease-in-out;
@@ -174,7 +174,7 @@ section {
   width: 100%;
   height: 80px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px -1px 33px rgb(0, 0, 0);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
 }
 
@@ -324,6 +324,25 @@ label {
   width: 100%;
   height: 850px;
   z-index: 2;
+}
+
+.services__wrapper {
+  padding: 3rem 1rem;
+}
+
+.services__solar-img-1 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.theecoexperts.co.uk/wp-content/uploads/2021/09/Solar-panels-in-field-1.jpeg");
+  background-position: center;
+}
+
+.services__solar-img-2 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.jll.cz/images/will-californias-solar-panel-requirements-pave-the-way-for-other-states-social-1200x628.jpg");
+  background-position: center;
+}
+
+.services__solar-img-3 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.squarespace-cdn.com/content/v1/5788eade6a4963f2a543ea10/1623679911399-VZQCWJ3QKHXPWXU7TVR5/most+efficient+solar+panels.jpg?format=750w");
+  background-position: center;
 }
 
 .line {
