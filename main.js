@@ -5,14 +5,18 @@ let navbar = document.querySelector(".navbar")
 window.onscroll = function () {
   let navbarHeight = window.getComputedStyle(navbar).height
   let currentScrollPos = window.pageYOffset
-  if (prevScrollpos > currentScrollPos) {
-    // show navbar when scrolling up
-    document.querySelector(".section-navbar").style.top = "0"
+  if (window.innerWidth > 767) {
+    if (prevScrollpos > currentScrollPos) {
+      // show navbar when scrolling up
+      document.querySelector(".section-navbar").style.top = "0"
+    } else {
+      // hide navbar when scrolling down
+      document.querySelector(".section-navbar").style.top = `-${navbarHeight}`
+    }
+    prevScrollpos = currentScrollPos
   } else {
-    // hide navbar when scrolling down
-    document.querySelector(".section-navbar").style.top = `-${navbarHeight}`
+    document.querySelector(".section-navbar").style.top = "0"
   }
-  prevScrollpos = currentScrollPos
 }
 // scroll to the top
 const scrollToTopBtn = document.getElementById("scrollToTop")
