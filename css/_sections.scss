@@ -5,25 +5,21 @@ section {
   padding: 4rem 0;
 }
 
-.section-navbar {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: $navbarHeight;
-  background-color: rgb(255, 255, 255);
+.section-navbar .section-navbar {
+  background-color: rgb(16, 24, 32);
   box-shadow: 0px 10px 20px rgb(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
 }
 
 .section-hero {
+  padding-top: 8rem;
   background-color: rgb(175, 175, 175);
-  height: calc(100vh - $navbarHeight); //backup value if svh is not supported
-  height: calc(100svh - $navbarHeight);
+  height: 100vh; //backup value if svh is not supported
+  height: 100svh;
 }
 
 .section-about {
   background-color: rgb(255, 255, 255);
-  padding-bottom: 4rem;
 }
 
 .section-services {
@@ -33,9 +29,6 @@ section {
 .section-gallery {
   background-color: #7d7d7d;
   padding: 4rem 0 0 0;
-}
-
-.section-footer {
 }
 
 @include bigger-than(md) {
