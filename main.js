@@ -44,10 +44,3 @@ toggleSwitch.addEventListener("click", () => {
   const nextTheme = currentTheme === "light" ? "dark" : "light"
   document.documentElement.setAttribute("data-theme", nextTheme)
 })
-
-// hamburger icon animation
-const hamburgerBtn = document.querySelector(".hamburgerBtn")
-const hamburgerAnimateIcon = document.querySelector(".hamburger-animated-icon")
-hamburgerBtn.addEventListener("click", () => {
-  hamburgerAnimateIcon.classList.toggle("open")
-})
