@@ -62,4 +62,10 @@ $breakpoints: (
   .footer__icons > a:hover > i {
     color: rgb(33, 37, 41);
   }
+  .header__logo > a {
+    color: rgb(254, 254, 254);
+    &:hover {
+      color: rgb(254, 254, 254);
+    }
+  }
 }

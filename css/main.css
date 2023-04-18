@@ -82,6 +82,12 @@ html[data-theme=dark] #footer {
 html[data-theme=dark] .footer__icons > a:hover > i {
   color: rgb(33, 37, 41);
 }
+html[data-theme=dark] .header__logo > a {
+  color: rgb(254, 254, 254);
+}
+html[data-theme=dark] .header__logo > a:hover {
+  color: rgb(254, 254, 254);
+}
 
 .switch_box {
   display: flex;
@@ -171,13 +177,21 @@ svg.checkbox .is_unchecked {
   }
 }
 nav {
-  background-color: rgb(150, 150, 150);
+  background-color: rgb(182, 182, 182);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease-in-out;
 }
 
+.nav-link {
+  color: rgb(33, 37, 41);
+}
+
 .header__logo > a {
+  transition: all 0.3s ease-in-out;
   text-decoration: none;
+}
+
+#hero {
   color: rgb(33, 37, 41);
 }
 
