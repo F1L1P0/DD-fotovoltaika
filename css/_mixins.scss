@@ -1,11 +1,11 @@
-@use "./variables" as *;
+@use './variables' as *;
 
 $breakpoints: (
-  "sm": 576px,
-  "md": 768px,
-  "lg": 992px,
-  "xl": 1200px,
-  "xxl": 1400px,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1400px,
 ) !default;
 
 @mixin bigger-than($breakpoint) {
@@ -22,13 +22,16 @@ $breakpoints: (
 @mixin gallery-cc() {
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -47%);
+  transform: translate(-50%, -49.5%);
 }
 
 @mixin dark() {
+  body {
+    background-color: rgba(122, 122, 122, 0.5);
+  }
   nav {
     transition: all 0.5s ease-in-out;
-    background-color: rgb(56, 62, 66);
+    background-color: rgba(122, 122, 122);
   }
   a,
   p,

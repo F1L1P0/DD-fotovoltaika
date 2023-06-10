@@ -1,10 +1,9 @@
-@use "./mixins" as *;
-@use "./variables" as *;
+@use './mixins' as *;
+@use './variables' as *;
 
-html[data-theme="dark"] {
+html[data-theme='dark'] {
   @include dark;
 }
-
 .switch_box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,7 +26,11 @@ html[data-theme="dark"] {
   position: relative;
 }
 
-input[type="checkbox"].switch_3 {
+.section-gallery {
+  background-color: #7d7d7d;
+}
+
+input[type='checkbox'].switch_3 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -50,18 +53,18 @@ svg.checkbox .outer-ring {
   animation: resetRing 0.35s ease-in-out forwards;
 }
 
-input[type="checkbox"].switch_3:checked + svg.checkbox .outer-ring {
+input[type='checkbox'].switch_3:checked + svg.checkbox .outer-ring {
   -webkit-animation: animateRing 0.35s ease-in-out forwards;
   animation: animateRing 0.35s ease-in-out forwards;
 }
 
-input[type="checkbox"].switch_3:checked + svg.checkbox .is_checked {
+input[type='checkbox'].switch_3:checked + svg.checkbox .is_checked {
   opacity: 1;
   -webkit-transform: translateX(0) rotate(0deg);
   transform: translateX(0) rotate(0deg);
 }
 
-input[type="checkbox"].switch_3:checked + svg.checkbox .is_unchecked {
+input[type='checkbox'].switch_3:checked + svg.checkbox .is_unchecked {
   opacity: 0;
   -webkit-transform: translateX(-200%) rotate(180deg);
   transform: translateX(-200%) rotate(180deg);
@@ -79,7 +82,7 @@ svg.checkbox {
 
 svg.checkbox .is_checked {
   opacity: 0;
-  fill: yellow;
+  fill: rgb(255, 193, 47);
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
   -webkit-transform: translateX(200%) rotate(45deg);

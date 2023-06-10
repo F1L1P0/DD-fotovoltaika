@@ -1,5 +1,5 @@
-@use "./mixins" as *;
-@use "./variables" as *;
+@use './mixins' as *;
+@use './variables' as *;
 
 section {
   padding: 4rem 0;
@@ -27,8 +27,12 @@ section {
 }
 
 .section-gallery {
-  background-color: #7d7d7d;
+  background-color: #ced4da;
   padding: 4rem 0 0 0;
+}
+
+.section-footer {
+  position: relative;
 }
 
 @include bigger-than(md) {

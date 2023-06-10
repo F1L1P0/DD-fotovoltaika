@@ -14,10 +14,25 @@
       integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
       crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/main.css" />
-    <title>DD - Fotovoltaika</title>
+    <title>DDenergy</title>
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-L3ER8NB2D7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || []
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+    gtag('js', new Date())
+
+    gtag('config', 'G-L3ER8NB2D7')
+  </script>
   <body>
-    <nav class="section-navbar position-fixed w-100 z-2 navbar-expand-md">
+    <nav
+      class="section-navbar position-fixed w-100 z-2 navbar-expand-md"
+      aria-hidden="true">
       <header class="navbar d-flex justify-content-between w-100 px-3">
         <div class="header__logo d-flex gap-2 align-items-center">
           <a
@@ -25,7 +40,7 @@
             id="scrollToTopLogo"
             class="fs-4 navbar-brand"
             aria-hidden="true">
-            DD pulsegroup.sro</a
+            DD energy</a
           >
         </div>
         <button
@@ -107,8 +122,8 @@
                     href="#about"
                     >O nás</a
                   >
-                  <a type="button" class="btn btn-outline-dark" href="#gallery"
-                    >Naše portfolio</a
+                  <a type="button" class="btn btn-outline-dark" href="#contact"
+                    >Kontakt na nás</a
                   >
                 </div>
               </div>
@@ -120,7 +135,8 @@
               <img
                 src="http://via.placeholder.com/340x250
               "
-                alt="Obrázek" />
+                alt="Obrázek"
+                loading="lazy" />
             </div>
           </div>
         </div>
@@ -131,7 +147,7 @@
       </div>
     </section>
     <section id="about" class="section-about">
-      <div class="container">
+      <div class="container hidden">
         <div class="row px-3">
           <div class="col-md-6">
             <h3>Welcome to</h3>
@@ -163,7 +179,7 @@
       </div>
     </section>
     <section id="services" class="section-services">
-      <div class="container-fluid">
+      <div class="container-fluid hidden">
         <div class="row text-center pt-0 text-white">
           <div class="col-12 col-md-4 p-0">
             <div class="services__wrapper services__solar-img-1">
@@ -193,7 +209,7 @@
             </div>
           </div>
         </div>
-        <div class="container">
+        <div class="container hidden">
           <div class="row d-flex justify-content-center gap-md-0">
             <div class="col-12 mt-3">
               <h2
@@ -265,8 +281,8 @@
         </div>
       </div>
     </section>
-    <section id="gallery" class="section-gallery">
-      <div class="container-fluid m-0 g-0">
+    <section id="gallery" class="section-gallery z-1">
+      <div class="container-fluid m-0 g-0 hidden">
         <div class="row m-0 g-0">
           <div class="col-12">
             <h2
@@ -344,9 +360,9 @@
         </div>
       </div>
     </section>
-    <section id="footer" class="section-footer bg-dark-subtle">
+    <section id="footer" class="section-footer bg-dark-subtle z-0">
       <footer class="footer">
-        <div class="container">
+        <div class="container hidden">
           <div class="row pt-3 d-flex justify-content-center">
             <div class="col-12 col-sm-6 col-md-4 text-center pb-3">
               <h2 id="contact" class="text-dark pb-2">Kontakt</h2>
