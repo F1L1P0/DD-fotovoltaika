@@ -1,76 +1,53 @@
-@use './mixins' as *;
-
-label {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
 .gallery {
-  @include gallery-cc();
-  width: 100%;
-  max-width: 100%;
-  height: 800px;
-
-  & [class*='item'] {
-    width: 33.33%;
-    height: 33.33%;
-    background: url() center center / cover no-repeat;
-    transition: all 0.3s ease-in-out;
-    z-index: 0;
-    &:hover {
-      cursor: pointer;
-      z-index: 2; //prevents image crossing when showing img
-      border: 1px solid rgba($color: #fff, $alpha: 0.7);
-    }
-    &:nth-of-type(1) {
-      top: 0;
-      left: 0;
-    }
-    &:nth-of-type(2) {
-      top: 0;
-      left: 33.33%;
-    }
-    &:nth-of-type(3) {
-      top: 0;
-      left: 66.66%;
-    }
-    &:nth-of-type(4) {
-      top: 33.33%;
-      left: 0;
-    }
-    &:nth-of-type(5) {
-      top: 33.33%;
-      left: 33.33%;
-    }
-    &:nth-of-type(6) {
-      top: 33.33%;
-      left: 66.66%;
-    }
-    &:nth-of-type(7) {
-      top: 66.33%;
-      left: 0%;
-    }
-    &:nth-of-type(8) {
-      top: 66.33%;
-      left: 33.33%;
-    }
-    &:nth-of-type(9) {
-      top: 66.33%;
-      left: 66.66%;
-    }
-  }
-
-  & input {
-    display: none;
-  }
-
-  & input:checked + [class*='item'] {
-    top: 0;
-    left: 0;
+  width: 80%;
+  max-width: 1300px;
+  margin: 70px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery__item {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  img {
     width: 100%;
-    height: 850px;
-    z-index: 2;
+    height: auto;
+  }
+}
+.gallery__modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.gallery__modal__content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 1200px;
+}
+.gallery-close {
+  color: #f1f1f1;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover,
+  &:focus-within {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
