@@ -354,8 +354,11 @@ section {
 .gallery__modal__content {
   margin: auto;
   display: block;
-  width: 80%;
+  max-width: 70%;
+  max-height: 80%;
   max-width: 1200px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .gallery-close {

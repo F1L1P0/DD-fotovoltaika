@@ -85,13 +85,15 @@ var modalImage = document.getElementById('modal-image')
 function openModal(imageSrc) {
   modal.style.display = 'block'
   modalImage.src = imageSrc
+  document.body.style.overflow = 'hidden'
 }
 
 function closeModal() {
   modal.style.display = 'none'
+  document.body.style.overflow = 'auto'
 }
 
-Array.from(links).forEach(function (link) {
+Array.from(links).forEach((link) => {
   link.addEventListener('click', function (event) {
     event.preventDefault()
     openModal(this.href)
