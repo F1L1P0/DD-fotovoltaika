@@ -123,7 +123,7 @@
         </div>
       </header>
     </nav>
-    <section id="hero" class="section-hero">
+    <section id="hero" class="section-hero hero__bg">
       <div class="container">
         <div class="row justify-content-center justify-content-md-between">
           <div class="col-12 col-md-6">
@@ -208,25 +208,13 @@
           <div class="col-12 col-md-4 p-0">
             <div class="services__wrapper services__solar-img-1">
               <h2><i class="fa-solid fa-pen"></i> Návrh</h2>
-              <p>
-                Navrhneme pro vás optimální řešení solárního systému.
-                <!-- Navrhneme pro vás optimální řešení pro zprovoznění solárního
-                systému, které bude přizpůsobeno vašim potřebám a požadavkům.
-                Zajistíme, aby váš systém byl co nejefektivnější a aby vám
-                poskytoval maximální výkon a úsporu energie. -->
-              </p>
+              <p>Navrhneme pro vás optimální řešení solárního systému.</p>
             </div>
           </div>
           <div class="col-12 col-md-4 p-0">
             <div class="services__wrapper services__solar-img-2">
               <h2><i class="fa-solid fa-hammer"></i> Zprovoznění</h2>
-              <p>
-                Nainstalujeme váš solární systém správně a bez problémů.
-                <!-- S našimi odborníky na instalaci můžete mít jistotu, že váš
-                solární systém bude nainstalován správně a bez problémů.
-                Postaráme se o veškeré potřebné kroky, aby byl váš systém
-                připraven k provozu co nejdříve. -->
-              </p>
+              <p>Nainstalujeme váš solární systém správně a bez problémů.</p>
             </div>
           </div>
           <div class="col-12 col-md-4 p-0">
@@ -235,10 +223,6 @@
               <p>
                 Nabízíme pravidelnou údržbu pro udržení optimálního výkonu
                 vašeho solárního systému.
-                <!-- Pravidelná údržba je klíčová pro udržení optimálního výkonu
-                vašeho solárního systému. Nabízíme kvalitní a profesionální
-                služby údržby, které vám pomohou udržet váš systém v dobré
-                kondici a prodloužit jeho životnost. -->
               </p>
             </div>
           </div>
@@ -316,112 +300,100 @@
       </div>
     </section>
     <section id="gallery" class="section-gallery pb-5">
-      <p
-        class="text-center fs-2 underline-decoration underline-decoration--center">
-        Galerie našich prací
-      </p>
-      <div class="gallery">
-        <div class="gallery__item">
-          <a href="./images/01.webp" class="gallery__modal__link">
-            <img
-              loading="lazy"
-              src="./images/01.webp"
-              alt="vue de la terre depuis l'espace" />
-          </a>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p
+              class="text-center fs-2 underline-decoration underline-decoration--center">
+              Galerie služeb
+            </p>
+            <div class="gallery">
+              <div class="gallery__item">
+                <a
+                  href="./images/car_solar_01.webp"
+                  class="gallery__modal__link">
+                  <img
+                    loading="lazy"
+                    src="./images/car_solar_01.webp"
+                    alt="vue de la terre depuis l'espace" />
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a href="./images/02.webp" class="gallery__modal__link">
+                  <img
+                    loading="lazy"
+                    src="./images/02.webp"
+                    alt="paysage montagneux sous un ciel étoilé et de teinte légèrement mauve" />
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a
+                  href="./images/img_karavan.webp"
+                  class="gallery__modal__link">
+                  <img
+                    class="gallery__item__shift"
+                    loading="lazy"
+                    src="./images/img_karavan.webp"
+                    alt="vue de la terre depuis l'espace" />
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a
+                  href="./images/car_solar_02.webp"
+                  class="gallery__modal__link">
+                  <img
+                    loading="lazy"
+                    src="./images/car_solar_02.webp"
+                    alt="vue de l'univers de manière illustrative" />
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a href="./images/05.webp" class="gallery__modal__link">
+                  <img
+                    class="gallery__item__shift"
+                    loading="lazy"
+                    src="./images/05.webp"
+                    alt="ombre d'une personne se tenant debout dans la pénombre sous un ciel étoilé" />
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a href="./images/06.webp" class="gallery__modal__link">
+                  <img
+                    class="gallery__item__shift"
+                    loading="lazy"
+                    src="./images/06.webp"
+                    alt="vue de la terre depuis l'espace, la nuit" />
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a
+                  href="./images/img_karavan_2.webp"
+                  class="gallery__modal__link">
+                  <img
+                    class="gallery__item__shift"
+                    loading="lazy"
+                    src="./images/img_karavan_2.webp"
+                    alt="illustration de particules diverses de couleurs rouge et bleue" />
+                </a>
+              </div>
+              <div class="gallery__item">
+                <a href="./images/08.webp" class="gallery__modal__link">
+                  <img
+                    loading="lazy"
+                    src="./images/08.webp"
+                    alt="représentation du cosmos" />
+                </a>
+              </div>
+              <div id="modal" class="gallery__modal">
+                <span class="gallery-close">&times;</span>
+                <img
+                  loading="lazy"
+                  class="gallery__modal__content"
+                  id="modal-image" />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="gallery__item">
-          <a href="./images/02.webp" class="gallery__modal__link">
-            <img
-              loading="lazy"
-              src="./images/02.webp"
-              alt="paysage montagneux sous un ciel étoilé et de teinte légèrement mauve" />
-          </a>
-        </div>
-        <div class="gallery__item">
-          <a href="./images/03.webp" class="gallery__modal__link">
-            <img
-              loading="lazy"
-              src="./images/03.webp"
-              alt="vue de la terre depuis l'espace" />
-          </a>
-        </div>
-        <div class="gallery__item">
-          <a href="./images/04.webp" class="gallery__modal__link">
-            <img
-              loading="lazy"
-              src="./images/04.webp"
-              alt="vue de l'univers de manière illustrative" />
-          </a>
-        </div>
-        <div class="gallery__item">
-          <a href="./images/05.webp" class="gallery__modal__link">
-            <img
-              loading="lazy"
-              src="./images/05.webp"
-              alt="ombre d'une personne se tenant debout dans la pénombre sous un ciel étoilé" />
-          </a>
-        </div>
-        <div class="gallery__item">
-          <a href="./images/06.webp" class="gallery__modal__link">
-            <img
-              loading="lazy"
-              src="./images/06.webp"
-              alt="vue de la terre depuis l'espace, la nuit" />
-          </a>
-        </div>
-        <div class="gallery__item">
-          <a href="./images/07.webp" class="gallery__modal__link">
-            <img
-              loading="lazy"
-              src="./images/07.webp"
-              alt="illustration de particules diverses de couleurs rouge et bleue" />
-          </a>
-        </div>
-        <div class="gallery__item">
-          <a href="./images/08.webp" class="gallery__modal__link">
-            <img
-              loading="lazy"
-              src="./images/08.webp"
-              alt="représentation du cosmos" />
-          </a>
-        </div>
-        <div class="gallery__item">
-          <a href="./images/09.webp" class="gallery__modal__link">
-            <img
-              loading="lazy"
-              src="./images/09.webp"
-              alt="vue de la terre depuis l'espace, avec une aurore boréale" />
-          </a>
-        </div>
-        <div class="gallery__item">
-          <a href="./images/10.webp" class="gallery__modal__link">
-            <img
-              loading="lazy"
-              src="./images/10.webp"
-              alt="astronaute qui se trouve dans l'espace sur une station orbitale" />
-          </a>
-        </div>
-        <div class="gallery__item">
-          <a href="./images/11.webp" class="gallery__modal__link">
-            <img
-              loading="lazy"
-              src="./images/11.webp"
-              alt="vue de la terre depuis la lune" />
-          </a>
-        </div>
-        <div class="gallery__item">
-          <a href="./images/12.webp" class="gallery__modal__link">
-            <img
-              loading="lazy"
-              src="./images/12.webp"
-              alt="astronaute sur un rover, depuis la lune" />
-          </a>
-        </div>
-      </div>
-
-      <div id="modal" class="gallery__modal">
-        <span class="gallery-close">&times;</span>
-        <img loading="lazy" class="gallery__modal__content" id="modal-image" />
       </div>
     </section>
     <section id="footer" class="section-footer bg-dark-subtle z-0">

@@ -18,6 +18,20 @@ window.onscroll = function () {
     document.querySelector('.section-navbar').style.top = '0'
   }
 }
+
+//clicking anchor link in navbar collapses modal
+document.addEventListener('DOMContentLoaded', function () {
+  var navLinks = document.querySelectorAll('.nav-link')
+  navLinks.forEach(function (navLink) {
+    navLink.addEventListener('click', function () {
+      var collapseElement = document.querySelector('.navbar-collapse')
+      var bsCollapse = new bootstrap.Collapse(collapseElement, {
+        toggle: false,
+      })
+      bsCollapse.hide()
+    })
+  })
+})
 // scroll to the top
 const scrollToTopBtn = document.getElementById('scrollToTop')
 const logo = document.getElementById('scrollToTopLogo')
@@ -36,13 +50,18 @@ logo.addEventListener('click', () => {
     behavior: 'smooth',
   })
 })
-// changing data theme
+// changing color scheme and savind choice into localstorage
 const toggleSwitch = document.querySelector('#toggle-switch')
+const currentTheme = localStorage.getItem('theme')
+if (currentTheme) {
+  document.documentElement.setAttribute('data-theme', currentTheme)
+}
 
 toggleSwitch.addEventListener('click', () => {
   const currentTheme = document.documentElement.getAttribute('data-theme')
   const nextTheme = currentTheme === 'light' ? 'dark' : 'light'
   document.documentElement.setAttribute('data-theme', nextTheme)
+  localStorage.setItem('theme', nextTheme)
 })
 
 //content face appearing

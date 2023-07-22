@@ -1,5 +1,4 @@
 .gallery {
-  width: 80%;
   max-width: 1300px;
   margin: 70px auto 0;
   display: flex;
@@ -30,11 +29,12 @@
   background-color: rgba(0, 0, 0, 0.9);
 }
 .gallery__modal__content {
-  margin: auto;
-  display: block;
-  max-width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
   max-height: 80%;
-  max-width: 1200px;
   object-fit: contain;
 }
 
@@ -53,4 +53,9 @@
     text-decoration: none;
     cursor: pointer;
   }
+}
+
+.gallery__item__shift {
+  object-position: 0 -70px;
+  transform: translate3d(0, 0, 1px);
 }

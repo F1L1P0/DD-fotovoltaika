@@ -7,8 +7,9 @@
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url('https://images.theecoexperts.co.uk/wp-content/uploads/2021/09/Solar-panels-in-field-1.jpeg');
+    url('../images/solar_bg_01.webp');
   background-position: center;
+  background-size: cover;
   height: 200px;
 }
 
@@ -18,8 +19,9 @@
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url('https://www.jll.cz/images/will-californias-solar-panel-requirements-pave-the-way-for-other-states-social-1200x628.jpg');
-  background-position: center;
+    url('../images/solar_bg_02.webp');
+  background-position: top;
+  background-size: cover;
   height: 200px;
 }
 
@@ -31,5 +33,6 @@
     ),
     url('https://images.squarespace-cdn.com/content/v1/5788eade6a4963f2a543ea10/1623679911399-VZQCWJ3QKHXPWXU7TVR5/most+efficient+solar+panels.jpg?format=750w');
   background-position: center;
+  background-size: cover;
   height: 200px;
 }

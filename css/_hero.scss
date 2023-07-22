@@ -1,5 +1,15 @@
 @use './mixins' as *;
 
+// .hero__bg {
+//   background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgb(0, 0, 0, 0.25)),
+//     url('../images/Solar-Panels-Cottage.jpeg');
+//   background-position: center;
+//   background-size: cover;
+//   overflow: hidden;
+//   height: 100vh;
+//   position: relative;
+// }
+
 .hero__img {
   margin-top: 2.5rem;
   max-width: 250px;
