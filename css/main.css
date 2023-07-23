@@ -51,7 +51,7 @@ html[data-theme=dark] body {
 }
 html[data-theme=dark] nav {
   transition: all 0.5s ease-in-out;
-  background-color: rgb(122, 122, 122);
+  background-color: rgba(122, 122, 122, 0.9);
 }
 html[data-theme=dark] a,
 html[data-theme=dark] p,
@@ -240,60 +240,77 @@ section {
     padding: 10rem 0;
   }
 }
-.hero__img {
-  margin-top: 2.5rem;
-  max-width: 250px;
-  height: auto;
+.hero__bg {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.35)), url("../images/Solar-Panels-Cottage.jpeg");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
 }
-.hero__img img {
-  width: 100%;
-}
-
-.mouse {
-  display: flex;
+.hero__bg::before {
+  content: "";
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 50px;
-  width: 30px;
-  border: 2px solid rgb(0, 0, 0);
-  bottom: 3%;
-  border-radius: 1rem;
-}
-.mouse > a {
-  display: block;
-  height: 100%;
+  top: 45%;
   width: 100%;
-  border-radius: 50%;
-}
-
-.mouse-circle {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  background-color: rgb(0, 0, 0);
-  animation: mouseScroll 2s infinite;
-  pointer-events: none;
-}
-
-@keyframes mouseScroll {
-  from {
-    transform: translate(-50%, -25px);
-    opacity: 1;
-  }
-  to {
-    transform: translate(-50%, 0);
-    opacity: 0;
-  }
+  height: 60vh;
+  height: 60svh;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 @media (min-width: 768px) {
-  .mouse {
-    display: flex;
+  .hero__bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 25vh;
+    height: 25svh;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.25);
+    z-index: 1;
+    width: 50%;
+    height: 100vh;
+    height: 100svh;
   }
 }
+
+.hero__heading {
+  position: absolute;
+  top: 20%;
+  letter-spacing: 1px;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.65);
+  text-align: center;
+  font-size: clamp(3rem, 2.5vw, 5rem);
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.8rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 45px;
+  padding: 1rem 0;
+}
+.hero__heading::after {
+  content: " energy";
+  text-transform: lowercase;
+}
+@media (min-width: 768px) {
+  .hero__heading {
+    position: static;
+    letter-spacing: 1rem;
+    width: auto;
+    background: none;
+    text-align: start;
+  }
+  .hero__heading::after {
+    content: "";
+  }
+}
+.hero__heading--bottom {
+  margin-top: 1em;
+}
+
 .services__wrapper {
   padding: 3rem 1rem;
 }
