@@ -1,3 +1,22 @@
+//
+const html = document.querySelector('html')
+const logoImg = document.querySelector('#scrollToTopLogo > img')
+const toggleSwitch = document.querySelector('#toggle-switch')
+
+toggleSwitch.addEventListener('click', () => {
+  if (html.getAttribute('data-theme') === 'dark') {
+    logoImg.setAttribute('src', './images/DD-logo__light.svg')
+  } else {
+    logoImg.setAttribute('src', './images/DD-logo.svg')
+  }
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (html.getAttribute('data-theme') === 'light') {
+    logoImg.setAttribute('src', './images/DD-logo__light.svg')
+  }
+})
+
 // when scrolling show/hide navbar
 let prevScrollpos = window.pageYOffset
 let navbar = document.querySelector('.navbar')
@@ -32,26 +51,8 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   })
 })
-// scroll to the top
-const scrollToTopBtn = document.getElementById('scrollToTop')
-const logo = document.getElementById('scrollToTopLogo')
 
-scrollToTopBtn.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: 'smooth',
-  })
-})
-logo.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: 'smooth',
-  })
-})
 // changing color scheme and savind choice into localstorage
-const toggleSwitch = document.querySelector('#toggle-switch')
 const currentTheme = localStorage.getItem('theme')
 if (currentTheme) {
   document.documentElement.setAttribute('data-theme', currentTheme)
@@ -67,8 +68,6 @@ toggleSwitch.addEventListener('click', () => {
 //content face appearing
 
 let firstHeading = document.getElementById('hero')
-
-console.log(firstHeading.getBoundingClientRect())
 
 function isVisible(element) {
   let elementBox = element.getBoundingClientRect()
